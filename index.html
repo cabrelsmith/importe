@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page de connexion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body style */
+body {
+    background-color: #87CEFA; /* Light sky blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login container */
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* Logo style */
+.logo img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+/* Input container style */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Icon style inside input */
+.input-container .icon {
+    margin-right: 10px;
+}
+
+/* Input fields */
+.input-container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* Button style */
+.login-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Icon design for inputs */
+.user-icon::before {
+    content: '👤';
+}
+
+.email-icon::before {
+    content: '✉️';
+}
+
+.password-icon::before {
+    content: '🔒';
+}
+
+</style>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="c:\Users\PAMSTORE\OneDrive\Images\1727281788811.jpg" alt="Logo">
+        </div>
+        <form action="home.html" method="post">
+            <!-- Le reste du formulaire reste inchangé -->
+            <div class="input-container">
+                <i class="icon user-icon"></i>
+                <input type="text" placeholder="Entrer votre nom " required>
+            </div>
+            <div class="input-container">
+                <i class="icon user-icon"></i>
+                <!--icon user-icon permet d'ajouter les icones-->
+                <input type="text" placeholder="Entrer votre prenom" required>
+            </div>
+            <div class="input-container">
+                <i class="icon email-icon"></i>
+                <input type="email" placeholder="votre adresse e-mail" required>
+            </div>
+            <div class="input-container">
+                <i class="icon password-icon"></i>
+                <input type="password" placeholder="votre mot de passe" required>
+            </div>
+            <button type="submit" class="login-btn">S'INSCRIRE</button>
+        </form>
+    </div>
+</body>
+</html>
